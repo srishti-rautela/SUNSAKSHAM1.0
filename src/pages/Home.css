@@ -1,0 +1,85 @@
+.page-container {
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-section {
+  padding: 3rem 0 2rem 0;
+  text-align: left;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.highlight-blue {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.hero-pitchline {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #4f46e5, #2563eb);
+  color: white;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.15);
+}
+
+.btn-secondary {
+  background-color: #f1f5f9;
+  color: #2563eb;
+  border: 1px solid #e0e7ef;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e7ef;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    padding: 0 0.5rem;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

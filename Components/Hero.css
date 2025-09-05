@@ -1,0 +1,57 @@
+.hero-section {
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+}
+
+/* Gradient highlight */
+.highlight {
+  background: linear-gradient(to right, #6366f1, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4f46e5, #2563eb);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.75);
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.1);
+}
+
+.btn-secondary:hover {
+  background: rgba(241, 245, 249, 0.95);
+  transform: translateY(-2px);
+}
+
+/* Avatar Image floating on the right */
+.avatar-image {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  transition: all 0.3s ease;
+}

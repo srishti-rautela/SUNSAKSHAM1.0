@@ -1,0 +1,113 @@
+/* --- Impact Section --- */
+.impact-section {
+  padding: 4rem 1.5rem;
+  background: #f8fafc;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating subtle shapes for depth */
+.impact-section::before,
+.impact-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.impact-section::before {
+  width: 250px;
+  height: 250px;
+  background: #93c5fd;
+  top: -50px;
+  left: -50px;
+}
+
+.impact-section::after {
+  width: 200px;
+  height: 200px;
+  background: #c4b5fd;
+  bottom: -40px;
+  right: -40px;
+}
+
+/* --- Grid --- */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Keep original order */
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Impact Card --- */
+.impact-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.08);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(37, 99, 235, 0.08);
+}
+
+.impact-card:hover {
+  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.18);
+  transform: translateY(-8px);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+/* --- Icon --- */
+.impact-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  color: #2563eb;
+  transition: transform 0.35s ease, color 0.3s ease;
+}
+
+.impact-card:hover .impact-icon {
+  transform: scale(1.2) rotate(10deg);
+  color: #1d4ed8;
+}
+
+/* --- Text --- */
+.impact-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #0f172a;
+}
+
+.impact-card p {
+  color: #475569;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* --- Stats --- */
+.impact-stat {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: auto;
+  color: #2563eb;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .impact-grid {
+    grid-template-columns: 1fr; /* stack on small screens */
+    gap: 2rem;
+  }
+  .impact-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
