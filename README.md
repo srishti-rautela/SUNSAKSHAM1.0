@@ -43,9 +43,8 @@ Designed to understand and adapt to Deaf users’ needs.
 🚀 Tech Stack
 Frontend: React.js / HTML / CSS / JavaScript
 Backend: Flask / Node.js
-AI/ML: Speech-to-Text, NLP, Gesture Animation
-Database: MongoDB / MySQL
-APIs: Web Speech API, Custom ISL Animation Engine
+AI/ML: Speech-to-Text, Gesture Animation
+
 
 🌈 Our Vision
 "To create a world where the Deaf community is not just included, but celebrated.
